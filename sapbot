@@ -13,3 +13,6 @@ resource "aws_instance" "web7" {
 }
 provider "aws" {
 resource = var.profile
+ami           ="$[lookup(var.ami, region)]"
+name = "hello web"
+
