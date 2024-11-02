@@ -11,3 +11,5 @@ resource "aws_instance" "web7" {
     Name = "HelloWorld9"
   }
 }
+provider "aws" {
+resource = var.profile
